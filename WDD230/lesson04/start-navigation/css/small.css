@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+body {
+    background-color: #253557;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Footer Section */
+
+footer a {
+    color: white;
+  }
+
+footer a:hover {
+  color: yellow;
+}
+  
+footer p {
+  color: white;
+}
+
+footer {
+  background-color: rgb(37, 53, 87);
+  border-top: 1px solid black;
+  color: white;
+  font-family: "Antonio", sans-serif;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+.map {
+  display: none;
+}
+
+.socialmedia {
+  margin: 1.5em;
+  text-align: center;
+}
+
+.socialmedia a {
+  margin: 0 .5em;
+}
+
+.socialmedia img {
+  width: 5%;
+}
+
+/* Finish Footer */
+
+/* Hearder Section */
+
+header {
+  align-items: center;
+  background-color: #253557;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: .1rem 5px;
+}
+
+header div {
+  display: inline;
+  margin: 0;
+}
+
+header img {
+  width: auto;
+}
+
+header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.slogan {
+  color: yellow;
+  font-size: .9rem;
+  font-style: italic;
+  letter-spacing: 1pt;
+  margin-left: 15px;
+} 
+
+/* Finish Header */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Main Section */
+
+main {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1em;
+  text-align: left;
+}
+
+main img {
+  width: 100%;
+}
+
+main h1, h2, h3 {
+  color: navy;
+}
+
+/* Navigation Section*/
+
+nav {
+  background-color: #253557;
+  border-bottom: 1px solid black;
+	margin: 0 auto;
+  padding: 1em;
+}
+
+.navigation {
+	list-style: none;
+  margin: 0 auto;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+  color: white;
+	display: block;
+  font-family: 'Antonio', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+	padding: .75rem;
+	text-align: left;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: black;
+	background-color: yellow;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+/* Finish Navigation */
+

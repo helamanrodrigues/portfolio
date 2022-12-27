@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assignment portal for Helaman Rodrigues in WDD 330: Web Development at Brigham Young University - Idaho"
+    />
+    <title>Helaman Rodrigues</title>
+    <link rel ="stylesheet" href="css/indexnormalize.css">
+    <link rel="stylesheet" href="css/indexsmall.css">
+    <link rel="stylesheet" href="css/indexmedium.css">
+    <link rel="shortcut icon" href="images/pexels-jessica-lewis-creative-3361483.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <img src="images/pexels-jessica-lewis-creative-3361483.jpg" alt="Notes Image"/>
+        <h1> Notes From Week 04 </h1>
+    </header>
+    <main class="container">
+       
+        <h3>Ch11: Further Functions Completed</h3>
+        <ul>
+            <li>Functions are “First class objects” They can have methods and properties.</li>
+            <li>We can call other functions using the call()method. Null should be passed as the first argument.</li>
+            <li>We can add many properties to a function as we can do it with and object.</li>
+        </ul>
+   
+        <h4>Functions can be call immediately</h4>
+        <p>
+            Example of syntaxis:<br>
+        (function() {<br>
+            // Code that runs in your function<br>
+            let userAge = 25;<br>
+            let currentYear = 2022;<br>
+            let born = currentYear - userAge;<br>
+            console.log(born);<br>
+        })()<br>
+    </p>
+
+        -You can add as many as you want inside the same function, they will be performed and the order they were declared
+        -Function that Define and Rewrite themselves 
+        - Depending on the order you call it, Functions can rewrite themselves.
+        <h3>Recursive Functions</h3>
+        -	This have been one of the hardest topics for me “Recursive function is one that invokes itself until a certain condition is met”. An example can be “Calculating the factorial of a number”
+        Promises
+        -	The future result of a function. On the other hand, promises are a good practice to handle results / errors it can take positive results and when things don’t as expect it can handle the errors.
+        
+        <h3>Ch8. Transforms and Transitions Completed</h3>
+        <ul>
+            <li>The transform property is used the add the following effects to element in css3: translate, rotate, scale and skew. </li>
+            <li>In my words “transform” is a like a class containing 4 functions.</li>
+            <li>Translation: Moves the element using the x and Y axis </li>
+            <li>Scaling: It allows you to increase or decrease the size of an element proportionally </li>
+            <li>Rotation: It allows you to rotate the element by specifying the angle value. Example : </li>
+            <li>transform: rotate(10deg)</li>
+        </ul>
+      
+        <h3>Transitions:</h3>
+        <p>The transitions make the changes visible over time can be seconds even minutes.</p>
+        <p>webkit is use so older browser cand support the transitions properties.</p>
+ 
+        <h3>Animations</h3>
+        <p>“Animations allow you to control each step of the animation via keyframes”</p>
+        <p>In order to create an animation, we need keyframes. </p>
+
+        <p> @-webkit-keyframes myAnimation { </p>
+            <p>/* put animation keyframes here */</p>
+        <p>}</p> 
+        <p>
+            @keyframes myAnimation { <br>
+                /* put animation keyframes here */<br>
+            }
+        </p>
+
+        <p>You need to use the webkit to make it available in older browsers</p>
+        <p>Keyframes contain a name and then in the body the animation.</p>
+        
+        <h3>Benefits of using transforms, transition and animations:</h3>
+        <p>It makes our websites more dynamic.</p>
+         <p>It improves the user experience.</p> 
+        
+        <h4>Summary:</h4>
+
+        <ul>
+            <li>Functions have built-in properties such as length, but can have custom properties added.</li>
+
+            <li>All functions have call() and apply() methods that can invoke a function with the value of this bound to an object that is provided as an argument.</li>
+                
+            <li>Immediately Invoked Function Expressions or IIFEs are functions that are enclosed in parentheses and immediately followed by double parentheses so they’re invoked. They are useful for namespacing variables and setting default values.</li>
+                
+            <li>Functions are able to dynamically redefine themselves in the body of the function, depending on certain conditions.</li>
+                
+            <li>A recursive function will keep invoking itself until a certain condition is met.</li>
+                
+            <li>A callback is a function that’s provided as an argument to another function.</li>
+                
+            <li>Callbacks are frequently used in asynchronous programming as part of the event loop. This means that a program can continue to run in a single thread while waiting for another task to be completed.</li>
+                
+            <li>Promises can be used instead of callbacks to deal with multiple asynchronous actions in sequence. They also provide a nicer mechanism for handling errors.</li>
+                
+            <li>Functions that return other functions are known as higher-order functions.</li>
+                
+            <li>A closure is the process of keeping a reference to a variable available outside the scope of the function it was originally defined in.</li>
+                
+            <li>A generator is created by placing an asterisk character (*) after the function keyword.</li>
+                
+            <li>A generator function will return an iterator object that provides a next() method, which returns the next value in a sequence that is defined in the generator function.</li>
+                
+            <li>Functional programming involves breaking processes down into steps that can be applied as a series of functions.</li>
+                
+            <li>Pure functions are functions that don't rely on the state of the code they are called from, have no side-effects, and always give the same result when given the same arguments (referential transparency).</li>
+                
+            <li>Currying or partial application is the process of applying one argument at a time to a function. A new function is returned until all the arguments have been used.</li>
+        </ul>
+
+        <a class="test" href="w04b.html">Notes Part 02: Json</a>
+       
+    </main>
+
+    <footer>
+        &copy; <span id="currentyear"></span> | Helaman Rodrigues | São Paulo, Brasil |
+        <a href="https://helamanrodrigues.github.io/Notes-From-WDD330/readings.html">Portal Home Page</a> |
+        <a href="https://www.byui.edu/online">BYU Online Learning</a>
+        <p>Last Updated: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chamber of Commerce Website for the Town of São Paulo" />
+  <meta name="author" content="Helaman Rodrigues" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+  <title>São Paulo City | Chamber of Commerce, São Paulo</title>
+</head>
+
+<body>
+  <!-- Banner -->
+  <aside id="banner">
+    <!-- banner text here -->
+    <p id="closeBanner">&times;</p>
+  </aside>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="logo" />
+      <div>
+        <h1>São Paulo City</h1>
+        <p>Chamber of Commerce</p>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="menu">
+      <div id="closeBtn">
+        &times;
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="sampa.html">São Paulo</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+    <div id="menuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <div id="summary">
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/hero.jpg" />
+        <source media="(max-width: 800px)" srcset="images/hero.jpg" />
+        <source media="(max-width: 1024px)" srcset="images/hero.jpg" />
+        <img src="images/hero.jpg" alt="São Paulo Image" />
+      </picture>
+      <div>
+        <h1>São Paulo City, SP</h1>
+        <p>The City of the Drizzle Land</p>
+        <hr>
+        <p>Year Founded: 1554</p>
+        <p>Current Population: 12 325 232</p>
+        <p>Total Area: 1 521,110 km²</p>
+      </div>
+    </div>
+    <section id="about">
+      <h2>About São Paulo City</h2>
+      <p>São Paulo  is a municipality in the Southwest Region of Brazil. The metropolis is an alpha global city (as listed by the GaWC) and the most populous city in Brazil, the Americas, the Western Hemisphere and the Southern Hemisphere. 
+        Additionally, São Paulo is the largest Portuguese-speaking city in the world. 
+        The municipality is also the world's 4th largest city proper by population.</p>
+      <p>The city is the capital of the surrounding state of São Paulo, the most populous and wealthiest state in Brazil. 
+        It exerts strong international influences in commerce, finance, arts and entertainment.
+        The name of the city honors the Apostle, Saint Paul of Tarsus. 
+        The city's metropolitan area, the Greater São Paulo, ranks as the most populous in Brazil and the 12th most populous on Earth.
+        The process of conurbation between the metropolitan areas located around the Greater São Paulo (Campinas, Santos, Sorocaba and São José dos Campos) created the São Paulo Macrometropolis, a megalopolis with more than 30 million inhabitants, one of the most populous urban agglomerations in the world.
+      </p>
+      <h2>Town structure</h2>
+      <p>Since the beginning of the 20th century, São Paulo has been one of the main economic centers of Latin America. 
+        With the First and Second World Wars and the Great Depression, coffee exports to the United States and Europe were heavily affected, forcing the rich coffee growers to invest in the industrial activities that would make São Paulo the largest industrial center in Brazil. 
+        The new job vacancies contributed to attract a significant number of immigrants (mainly from Italy) and migrants, especially from the Northeastern states.
+        From a population of only 32.000 people in 1880, São Paulo now has 8.5 million inhabitants in 1980. 
+        The rapid population growth has brought many problems for the city.
+      </p>
+      <p>São Paulo is practically all served by the water supply network. 
+        The city consumes an average of 221 liters of water/inhabitant/day while the UN recommends the consumption of 110 liters/day.
+        The water loss is 30.8%. 
+        However, between 11 and 12.8% of households do not have a sewage system, depositing waste in pits and ditches. 
+        Sixty percent of the sewage collected is treated. 
+        According to data from IBGE and Eletropaulo, the electricity grid serves almost 100% of households. 
+        The fixed telephony network is still precarious, with coverage of 67.2%. 
+        Household garbage collection covers all regions of the municipality but is still insufficient, reaching around 94% of the demand in districts such as Parelheiros and Perus. 
+        About 80% of the garbage produced daily by Paulistas is exported to other cities, such as Caieiras and Guarulhos.
+        Recycling accounts for about 1% of the 15,000 metric tons of waste produced daily.
+      </p>
+    </section>
+    <section id="forecast">
+      <h2>Weather Forecast</h2>
+      <hr>
+      <div class="forecast-box"></div>
+    </section>
+    <section id="gallery">
+      <h2>Photo Gallery of São Paulo</h2>
+      <div id="container">
+        <figure>
+          <img src="images/placeholder_landscape.png" data-src="images/paulista.jpg"
+            alt="Avenida Paulista" />
+          <figcaption>Avenue Paulista</figcaption>
+        </figure>
+        <figure>
+          <img src="images/placeholder_landscape.png" data-src="images/ibirapuera.jpg" alt="Parque Ibirapuera" />
+          <figcaption>Ibirapuera Park</figcaption>
+        </figure>
+        <figure>
+          <img src="images/placeholder_landscape.png" data-src="images/catedral.jpg"
+            alt="Catedral Sé" />
+          <figcaption>Sé Cathedral</figcaption>
+        </figure>
+        <figure>
+          <img src="images/placeholder_landscape.png" data-src="images/beco.jpg" alt="Beco do Batman"/>
+          <figcaption>Batman Alley</figcaption>
+        </figure>
+        <figure>
+          <img src="images/placeholder_landscape.png" data-src="images/pinacoteca.jpg"
+            alt="Pinacoteca" />
+          <figcaption>Art Gallery</figcaption>
+        </figure>
+        <figure>
+          <img src="images/placeholder_landscape.png" data-src="images/martinelli.jpg" alt="Edificio Martinelli" />
+          <figcaption>Martinelli Building</figcaption>
+        </figure>
+        <figure>
+          <img src="images/placeholder_landscape.png" data-src="images/vale.jpg"
+            alt="Vale do Anhangabau" />
+          <figcaption>Anhangabau Valley</figcaption>
+        </figure>
+        <figure>
+          <img src="images/placeholder_landscape.png" data-src="images/mercado.jpg" alt="Mercado Municipal de São Paulo" />
+          <figcaption>Municipal Market</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <hr>
+      <div>
+        <div class="event">
+          <h4>July 18</h4>
+          <p>Museu de Arte Sacra de São Paulo</p>
+        </div>
+        <div class="event">
+          <h4>August 4</h4>
+          <p>Tarsila para crianças - Shopping Villa Lobos</p>
+        </div>
+        <div class="event">
+          <h4>August 8</h4>
+          <p>Zooparque Itatiba</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="top">
+      <div class="about-us">
+        <img src="images/logo.png" alt="logo" />
+        <p>We are proudly accountable to a better way of doing business. We actively pursue the wellbeing of staff,
+          communities and environment and help the businesses we work with do so as well.</p>
+      </div>
+      <div>
+        <a href="//google.com">
+          7777777 São Paulo Street <br> Sampa Business <br> São Paulo <br> SP.
+        </a>
+      </div>
+      <div>
+        <a href="contact.html">Contact Us</a> <br>
+        <a href="tel:+11998761234">(11) 99876-1234</a> <br>
+        <a href="mailto:h_rodrigues@gmail.com">h_rodrigues@gmail.com</a>
+      </div>
+      <div>
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="//facebook.com">FB</a></li>
+          <li><a href="//twitter.com">TW</a></li>
+          <li><a href="//instagram.com">INS</a></li>
+          <li><a href="//linkedin.com">LKD</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2021 Helaman Rodrigues  
+      <p>Weather Data provided by
+        <a href="https://https://openweathermap.org/">OpenWeatherMap.org</a>
+      </p>
+      <p>Last modified <span id="currentDate">202x</span>&nbsp;</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/lazyload.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+
+/* Footer Section */
+
+footer a {
+    color: white;
+  }
+
+footer a:hover {
+  color: yellow;
+}
+  
+footer p {
+  color: white;
+}
+
+footer {
+  background-color: rgb(37, 53, 87);
+  border-top: 1px solid black;
+  color: white;
+  font-family: "Antonio", sans-serif;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+/* Finish Footer */
+
+/* Hearder Section */
+  
+header {
+    align-items: center;
+    background-color: #0C406B;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+	text-align: center;
+}
+
+/* Finish Header */
+
+/* Main Section */
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+main {
+    margin: 0 auto;
+	max-width: 80em;
+}
+
+
+/* Finish Main */
+
+/* Main Cards Area Section */
+
+.cards {
+    box-shadow: 0 0 30px #0C406B;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+	margin: 20px;
+	padding: 15px;
+}
+
+.cards section {
+    align-items: center;
+    background-color: #e2e9f0;
+    border: 1px solid #000000;
+	box-shadow: 0 0 5px #0C406B;
+    display: flex;
+    flex-direction: column;
+	margin: 10px;
+	max-width: 550px;
+	padding: 15px;
+}
+
+.cards h2 {
+	margin: 0;
+}
+
+.cards p {
+	text-align: center;
+}
+
+.cards img {
+    box-shadow: 0 0 15px #000000;
+	width: 100%;
+}
+
+/* Finish Main Cards Area */
+
+/* Typography Section */
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+    color: #0C406B;
+    font-size: 25px;
+	text-align: center;	
+}
+
+p {
+	font-size: 16px;
+}
+
+a {
+    color:#ffffff;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#000000;
+}
+
+/* Finish Typography */
+
+/* Utah Born Prophets Area Section */
+
+.utahBorn {
+    box-shadow: 0 0 30px #0C406B;
+	display: none;
+	margin: 50px 20px 20px 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+
+/* Finish Utah Born Prophets Area */
+
+/* only display utah born in large view */
+
+@media only screen and (min-width: 80em) {
+	.utahBorn {
+		display: block;
+	}
+}
+
+.utah {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.utah section {
+    align-items: center;
+    background-color: #e2e9f0;
+    border: 1px solid #000000;
+	box-shadow: 0 0 5px #0C406B;
+    display: flex;
+	flex-direction: column;
+    padding: 5px;
+	width: 8.5em;
+}
+
+.utah img {
+	width: 8em;
+	box-shadow: 0 0 8px #000000;
+}
+
+.utah h3 {
+	font-size: 12px;
+	text-align: center;
+}

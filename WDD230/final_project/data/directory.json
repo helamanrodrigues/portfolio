@@ -1,0 +1,84 @@
+{
+    "businesses": [
+      {
+        "name": "Dell Techonologies",
+        "logo": "dell.png",
+        "address": "Rua Verbo Divino, 1488, São Paulo, SP",
+        "phone": "0800 970 3384",
+        "email": "hello@dell.com",
+        "website": "https://www.delltechnologies.com",
+        "level": "Gold",
+        "description": "Dell Technologies is the premiere IT company in São Paulo that serves businesses of all domains, and has served clients in several parts of the world"
+      },
+      {
+        "name": "IFood",
+        "logo": "ifood.png",
+        "address": "Avenida dos Autonomistas, 1496, Vila Yara, Osasco Sp",
+        "phone": "(11) 3030-2929",
+        "email": "imprensa@ifood.com.br",
+        "website": "https://www.ifood.com.br",
+        "level": "Silver",
+        "description": "At IFood, we think differently and act boldly. We build our name on providing generations of families with wholesome great – tasting food."
+      },
+      {
+        "name": "Grupo Ipê",
+        "logo": "grupoipe.png",
+        "address": "Rodovia Rio Claro-Ajap, km 09, Ajapi - Rio Claro/SP",
+        "phone": "(19) 3522-5701",
+        "email": "contato@grupoipe.com.br",
+        "website": "https://www.grupoipe.com.br/",
+        "level": "Silver",
+        "description": "Grupo Ipê is into Poultry, Fish Farming (eggs, meat,day old chicks,fingerlings and grow-out) and animal Husbandry and sales of Farmlands land and facilities."
+      },
+      {
+        "name": "JPMorgan Chase & Co",
+        "logo": "jpm.jpg",
+        "address": "Avenida Brigadeiro Faria Lima, 3729, São Paulo, Sp",
+        "phone": "(11) 4950 3700",
+        "email": "ouvidoria.jp.morgan@jpmorgan.com",
+        "website": "https://www.jpmorgan.com.br/pt/about-us",
+        "level": "Silver",
+        "description": "We have one all-consuming passion here at JPMorgan Chase & Co: to help people save money and live better. We do this by helping regular people access exclusive U.S. dealer auctions."
+      },
+      {
+        "name": "Mckinsey & Company",
+        "logo": "mk.jpeg",
+        "address": "Avenida Presidente Juscelino Kubitschek, 1909, Vila Nova Conceição, São Paulo, SP",
+        "phone": "(11) 5189-1400",
+        "email": "info@mckinsey.com",
+        "website": "https://www.mckinsey.com.br/#",
+        "level": "Gold",
+        "description": "Mckinsey is a Real Estate Organisation that provides high level expertise in Real estate Services. Our Areas of specialization includes property Development, Sales and Services & Consulting."
+      },
+      {
+        "name": "Energisa",
+        "logo": "energisa.png",
+        "address": "Bragança Paulista, São Paulo, SP",
+        "phone": "0800 70 10 326",
+        "email": "info@energisa.com",
+        "website": "https://www.energisa.com.br/",
+        "level": "Gold",
+        "description": "Energisa is a leading technology company delivering bespoke sustainable Solar energy, power Systems solutions and turnkey projects across various sectors of the Nigerian economy ."
+      },
+      {
+        "name": "The Kraft Heinz Company",
+        "logo": "kraft.jpg",
+        "address": "Avenida Rebouças, 3970, Pinheiros, São Paulo, SP",
+        "phone": "(11) 4688-3800",
+        "email": "info@kraftheinz.com",
+        "website": "https://www.kraftheinzcompany.com/",
+        "level": "Gold",
+        "description": "The Kraft Heinz Company is the third-largest food and beverage company in North America and the fifth-largest food and beverage company in the world, with eight $1 billion+ brands. A globally trusted producer of delicious foods, The Kraft Heinz Company provides high quality, great taste and nutrition for all eating occasions whether at home, in restaurants or on the go."
+      },
+      {
+        "name": "Bento Jr Advogados",
+        "logo": "bento.jpg",
+        "address": "Rua Sapetuba, 187, Butantã, São Paulo, SP",
+        "phone": "(11) 3037-8500",
+        "email": "hello@bento.com",
+        "website": "https://bentojradvogados.com.br/",
+        "level": "Gold",
+        "description": "Bento Jr Advogados is established by a team of lawyers with a passion and dedication to cater to needs for quality legal services. Our lawyers have experience and technical know-how to deliver quality litigation."
+      }
+    ]
+  }

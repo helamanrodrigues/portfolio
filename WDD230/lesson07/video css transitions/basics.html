@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Assignment Sign Up Presentation for Helaman Rodrigues in WDD 230: Web Development at Brigham Young University - Idaho">
+		<meta name="author" content="Helaman Rodrigues">
+
+<!-- This start file was build by Helaman Rodrigues  -->
+		<title>CSS Transitions</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+		<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+		<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+		<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+		<link href="css/large.css" rel="stylesheet">
+   
+	</head>
+
+	<body>
+<!-- HEADER HERE -->
+		<header>
+			<div class="headings">
+ 				<h1>WDD Week 7 - CSS Transitions</h1>
+        		<div class="slogan">Content about CSS Transitions and his utilities.</div>
+			</div>
+    	</header>    
+    
+<!-- NAVIGATION HERE -->
+		<nav>
+			<ul class="navigation">
+				<li><a class="ham" href="#">&#9925 Menu</a></li>
+				<li><a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/">Home</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li class="active"><a href="basics.html">Basics</a></li>
+				<li><a href="properties.html">Properties</a></li>
+				<li><a href="example.html">Example</a></li>
+			</ul>
+		</nav>
+		<div class="secondNavBar">
+			<button class="secondNav tablink highlightTab" onclick="openSection(event, 'sectionNameTransition')">Transitions</button>
+			<button class="secondNav tablink" onclick="openSection(event, 'sectionNameTiming')">Timing</button>
+			<button class="secondNav tablink" onclick="openSection(event, 'sectionNameDelay')">Delay</button>
+			<button class="secondNav tablink" onclick="openSection(event, 'sectionNameTransformation')">Transformation</button>
+		</div>
+     
+<!-- CONTENT HERE -->
+		<main>
+    		<h1>CSS Transitions</h1>
+			<hr>
+			<section id="sectionNameTransition" class="sectionName">
+				<h2>What is a CSS Transition?</h2>
+				<p>CSS transitions allows you to change property values smoothly, over a given duration</p>
+				<p>Mouse over the element below to see a CSS Transition effect:</p>
+				<div style="height: 90px;">
+				<div class="animated_div">CSS</div>
+				</div>
+				<h2>How to use CSS Transitions?</h2>
+				<p>To create a transition effect, you must specify two things:</p>
+				<ul>
+					<li>The CSS property you want to add an effect to</li>
+					<li>The duration of the effect</li>
+				</ul>
+				<p><b>Note:</b>If the duration part is not specified, the transition will have no effect, because the default value is 0.</p>
+				<p>The following example shows a 100px * 100px red &lt;div&gt; element. The &lt;div&gt;
+					element has also specified a transition effect for the width property, with a duration of 2 seconds:</p>
+				<div class="example">
+					<h3>Templet</h3>
+					<div class="codingText">
+					div
+					{<br>&nbsp; width: 100px;<br>&nbsp;&nbsp;height: 100px;<br>&nbsp; 
+					background: red;<br>&nbsp;&nbsp;transition: width 2s;<br>
+					}
+					</div>
+					<br>
+					</div>
+				<p>The transition effect will start when the specified CSS property (width) change values.</p>
+				<p>Now, let us specify a new value for the width property when a user mouses over the &lt;div&gt; element:</p>
+				<div class="example">
+					<h3>Example</h3>
+					<div class="codingText">
+					div:hover
+					{<br>
+					&nbsp;&nbsp;width: 300px;<br>
+					}
+					</div>
+					<br>
+					</div>
+				<p>Let's see the example in action: </p>
+				<h4>The transition Property</h4>
+
+				<p>Hover over the div element below, to see the transition effect:</p>
+				
+				<div class="square"></div>
+				<p>Notice that when the cursor mouses out of the element, it will gradually change back to its original style.</p>
+				<h2>Change Several Property Values</h2>
+				<p>The following example adds a transition effect for both the width and height property, with a duration of 2 seconds for the width and 4 seconds for the height:</p>
+				<div class="example">
+					<h3>Example</h3>
+					<div class="codingText">
+					div
+					{<br>
+					&nbsp;&nbsp;transition: width 2s, height 4s;<br>
+					}
+					</div>
+					<br>
+					</div>
+					<div class="square2"></div>
+					<p>Notice that when the cursor mouses out of the element, it will gradually change back to its original style.</p>
+			</section>	
+			<section id="sectionNameTiming" class="sectionName" style="display: none;">
+				<h2>Specify the Speed Curve of the Transition</h2>
+				<p>The <b>transition-timing-function</b> property specifies the speed curve of the transition effect.</p>
+				<p>The transition-timing-function property can have the following values:</p>
+				<ul>
+					<li><b>ease</b> - specifies a transition effect with a slow start, then fast, then end slowly (this is default)</li>
+					<li><b>linear</b> - specifies a transition effect with the same speed from start to end</li>
+					<li><b>ease-in</b> - specifies a transition effect with a slow start</li>
+					<li><b>ease-out</b> - specifies a transition effect with a slow end</li>
+					<li><b>ease-in-out</b> - specifies a transition effect with a slow start and end</li>
+					<li><b>cubic-bezier(n,n,n,n)</b> - lets you define your own values in a cubic-bezier function</li>
+				</ul>
+				<p>The following example shows some of the different speed curves that can be used:</p>
+				<div class="example">
+					<h3>Example</h3>
+					<div class="codingText">
+					#div1 {transition-timing-function: linear;}<br>#div2 
+					{transition-timing-function: ease;}<br>#div3 {transition-timing-function: 
+					ease-in;}<br>#div4 {transition-timing-function: ease-out;}<br>#div5 
+					{transition-timing-function: ease-in-out;}</div>
+					<br>
+					</div>
+					<h4>The transition-timing-function Property</h4>
+					<p>Hover over the div elements below, to see the different speed curves:</p>
+					
+					<div class="timing" id="timing1">linear</div><br>
+					<div class="timing" id="timing2">ease</div><br>
+					<div class="timing" id="timing3">ease-in</div><br>
+					<div class="timing" id="timing4">ease-out</div><br>
+					<div class="timing" id="timing5">ease-in-out</div><br>
+			</section>
+			<section id="sectionNameDelay" class="sectionName">
+				<h2>Delay the Transition Effect</h2>
+				<p>The <b>transition-delay</b> property specifies a delay (in seconds) for the transition effect.</p>
+				<p>The following example has a 1 second delay before starting:</p>
+				<div class="example">
+					<h3>Example</h3>
+					<div class="codingText">
+					div {<br>&nbsp; 
+					transition-delay: 1s;<br>}</div>
+					<br>	
+					</div>
+					<h4>The transition-delay Property</h4>
+					<p>Hover over the div element below, to see the transition effect:</p>
+					<div class="delay"></div>
+					<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+			</section>
+			<section id="sectionNameTransformation" class="sectionName">
+				<h2>Transition + Transformation</h2>
+				<p>The following example adds a transition effect to the transformation:</p>
+				<div class="example">
+					<h3>Example</h3>
+					<div class="codingText">
+					div {<br>&nbsp;&nbsp;transition: 
+					width 2s, height 2s, transform 2s;<br>}</div>
+					<br>
+					</div>
+					<h4>Transition + Transform</h4>
+					<p>Hover over the div element below:</p>
+					<div class="transformation"></div>
+			</section>
+		</main>
+    
+<!-- FOOTER HERE -->   
+    	<footer>
+        	&copy; <span id="currentyear"></span> | Helaman Rodrigues | São Paulo, Brasil |
+        	<a href="https://www.byui.edu/online">BYU Online Learning</a>
+        	<p>Last Updated: <span id="lastmod"></span></p>
+        	<a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/">Portal Home Page</a>
+    	</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					families: ["Antonio:300,400,700", "Roboto:300,400,700"],
+				},
+			});
+		</script>
+		<script src="js/currentdate.js"></script>   
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

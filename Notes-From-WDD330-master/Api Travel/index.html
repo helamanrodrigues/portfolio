@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="API TRAVEL">
+		<meta name="author" content="Helaman Rodrigues">
+
+<!-- This start file was build by Helaman Rodrigues  -->
+		<title>Nomads Trip</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+		<link rel="shortcut icon" href="images/logo.ico">
+		<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+		<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+		<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+		<link href="css/large.css" rel="stylesheet">
+   
+	</head>
+
+	<body>
+<!-- HEADER HERE -->
+		<header>
+			<div class="logo-box">
+				<img src="images/nomads_trip_logotipo-03.png" alt="Logo of Nomads Trip">
+			</div>
+			<div class="headings">
+ 				<h1>Nomads Trip - Enjoy With Us</h1>
+			</div>
+    	</header>    		
+     
+<!-- CONTENT HERE -->
+		<main>
+			<div class="row">
+				<div class="column1">
+				  <div class="contactList">
+					<div class="header">Travel List</div>
+					<div class="contacts">
+					  <ul></ul>
+					</div>
+					<div class="weatherContainer">
+					  <div id="marquee-cont">
+						<table>
+						  <tr>
+							<td id="marquee">
+							  <marquee
+								onmouseover="this.stop();"
+								onmouseout="this.start();"
+								id="scroll"
+							  ></marquee>
+							</td>
+						  </tr>
+						</table>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="column2">
+				  <div class="contactInfo" id="contactInfo">
+					<form id="form">
+					  <label id="id" hidden></label>
+					  <label for="fName">First Name: </label>
+					  <input
+						name="fName"
+						id="fName"
+						type="text"
+						maxlength="32"
+						onblur="return letters(this,event);"
+						onkeypress="return letters(this,event);"
+						pattern="[A-Za-z]{2,32}"
+						onchange="requiredField()"
+						disabled
+					  />
+					  <label for="lName">Last Name: </label>
+					  <input
+						name="lName"
+						id="lName"
+						type="text"
+						maxlength="32"
+						onblur="return letters(this,event);"
+						onkeypress="return letters(this,event);"
+						pattern="[A-Za-z ]{32}"
+						onchange="requiredField()"
+						disabled
+					  />
+					  <label for="company">Company: </label>
+					  <input
+						name="company"
+						id="company"
+						type="text"
+						maxlength="32"
+						onblur="return alphaNumerical(this,event);"
+						onkeypress="return alphaNumerical(this,event);"
+						pattern="[A-Za-z ]{32}"
+						onchange="requiredField()"
+						disabled
+					  />
+					  <label for="address">Address: </label>
+					  <input
+						name="address"
+						id="address"
+						type="text"
+						maxlength="32"
+						onblur="return alphaNumerical(this,event);"
+						onkeypress="return alphaNumerical(this,event);"
+						pattern="[a-zA-Z0-9 ]+"
+						disabled
+					  />
+					  <label for="city">City: </label>
+					  <input
+						name="city"
+						id="city"
+						type="text"
+						maxlength="32"
+						onblur="return letters(this,event);"
+						onkeypress="return letters(this,event);"
+						pattern="[A-Za-z ]{32}"
+						disabled
+					  />
+					  <label for="state">State: </label>
+					  <input
+						name="state"
+						id="state"
+						type="text"
+						minlength="2"
+						maxlength="2"
+						onblur="return letters(this,event);"
+						onkeypress="return letters(this,event);"
+						disabled
+					  />
+					  <label for="zip">Zip Code: </label>
+					  <input
+						name="zip"
+						id="zip"
+						type="text"
+						maxlength="7"
+						onblur="return alphaNumerical(this,event);"
+						onkeypress="return alphaNumerical(this,event);"
+						pattern="^\d{5}-\d{4}|\d{5}|[A-Z]\d[A-Z] \d[A-Z]\d$"
+						disabled
+					  />
+					  <label for="country">Country: </label>
+					  <input
+						name="country"
+						id="country"
+						type="text"
+						maxlength="32"
+						onblur="return letters(this,event);"
+						onkeypress="return letters(this,event);"
+						pattern="[A-Za-z ]{32}"
+						disabled
+					  />
+					  <label for="phone">Phone: </label>
+					  <input
+						name="phone"
+						id="phone"
+						type="tel"
+						maxlength="12"
+						onblur="return phoneNumber(this,event);"
+						onkeypress="return phoneNumber(this,event);"
+						pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+						placeholder="801-555-1212"
+						disabled
+					  />
+					  <label for="dob">Birthdate: </label>
+					  <input
+						name="dob"
+						id="dob"
+						type="dob"
+						maxlength="10"
+						onblur="return date(this,event);"
+						onkeypress="return date(this,event);"
+						placeholder="mm/dd/yyyy"
+						disabled
+					  />
+					</form>
+					<div>
+					  <div id="map"></div>
+					  <div id="weatherWrapper"></div>
+					  <br />
+					</div>
+				  </div>
+				  <div id="error"></div>
+				  <div class="options">
+					<button class="slide_from_top" id="newContact">New</button>
+					<button class="slide_from_top" id="editContact">Edit</button>
+					<button class="slide_from_top" id="saveContact">Clear</button>
+				  </div>
+				</div>
+			  </div>
+		</main>
+		<br>
+    
+<!-- FOOTER HERE -->   
+		<footer>
+			&copy; <span id="currentyear"></span>
+			| Helaman Rodrigues | São Paulo, Brasil |
+		</footer>
+		<!-- JAVASCRIPTS-->
+		<script defer src="js/getCoords.js"></script>
+		<script defer src="js/weather.js"></script>
+		<script defer src="js/ls.js"></script>
+		<script defer src="js/contacts.js"></script>
+		<script defer src="js/main.js"></script>
+		<script defer src="js/validation.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	</body>
+</html>
+

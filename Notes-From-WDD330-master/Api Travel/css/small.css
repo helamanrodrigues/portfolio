@@ -1,0 +1,331 @@
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/** Address book setup **/
+.row {
+    /**
+    align-items: center;
+    display: flex;
+    justify-content:right;
+    **/
+    margin-top: 10px;
+}
+  
+.column1, .column2 {
+    border: solid 1px black;
+}
+  
+.column1 {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+  
+.column2 {
+    max-width: 100%;
+}
+ 
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/** Column 1 **/
+
+.contacts {
+    background-color: var(--ceruleanblue);
+    color: #d1e8e2;
+    height: 200px;
+    overflow: auto;
+}
+
+.contacts ul {
+    padding: 0;
+}
+  
+.contacts ul li {
+    background: linear-gradient(to right, var(--spacecadet) 50%, var(--ceruleanblue) 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    border: 1px solid var(--silversand);
+    height: 30px;
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 2.5px;
+    text-transform: capitalize;
+    transition: all 0.5s ease-out;
+    max-width: 95%;
+}
+  
+.contacts ul li:hover {
+    background-position: left bottom;
+}
+  
+.contacts ul li button {
+    background-color: var(--ceruleanblue);
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.contactInfo {
+    background-color: var(--silversand);
+    padding-left: 20px;
+    padding-top: 25px;
+    overflow: auto;
+}
+
+.header {
+    align-items: center;
+    background-color: var(--spacecadet);
+    border-bottom: solid 1px black;
+    color: var(--accent);
+    display: flex;
+    font-size: 25px;
+    max-height: fit-content;
+    justify-content: center;
+}
+
+#marquee-cont {
+    background: var(--white);
+    border: 1px solid var(--white);
+    font-size: 1.3rem;
+    font-weight: bold;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    padding: 4px;
+    max-width: 95%;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td {
+    padding: 0;
+}
+  
+#ticker-title:focus {
+    outline: none;
+}
+
+.weatherContainer {
+    background-color: var(--ceruleanblue);
+    height: 50px;
+    padding-top: 8px;
+}
+  
+/** Column 2 **/
+
+button[class^="slide"]::after {
+    transition: all 0.35s;
+}
+  
+button[class^="slide"]:hover::after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.35s;
+}
+  
+button.slide_from_top::after {
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    top: -100%;
+}
+
+.error {
+    background-color: var(--spacecadet);
+    color: red;
+    font-size: 25px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#fName, #lName, #company, #address, #city, #country {
+    text-transform: capitalize;
+}
+
+iframe {
+    border: 1px solid var(--carolinablue);
+    margin-top: 5px;
+    width: 95%;
+}
+
+input {
+    border: 1px solid var(--silversand);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px var(--ceruleanblue);
+    font-size: 20px;
+    height: 30px;
+    outline: none; /* Good for when border-radius is used */
+    padding-left: 10px;
+    width: 490px;
+}
+  
+input:focus {
+    background-color: var(--accent);
+    border: 2px solid var(--carolinablue);
+}
+  
+input:required {
+    border-left: 4px solid red;
+}
+
+
+label {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 2px;
+    text-align: left;
+    width: 100px;
+}
+
+#newContact {
+    float: left;
+}
+
+.options {
+    background-color: var(--spacecadet);
+    height: 90px;
+    padding: 15px 15px 0 15px;
+    text-align: center;
+}
+
+.options button {
+    background-color: var(--ceruleanblue);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px var(--silversand);
+    color: var(--silversand);
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    overflow: hidden;
+    padding: 15px 25px;
+    position: relative;
+    text-align: center;
+    width: 125px;
+    z-index: 1;
+}
+
+.options button:active {
+    background-color: var(--ceruleanblue);
+    box-shadow: 0 5px var(--silversand);
+    transform: translateY(4px);
+}
+  
+.options button::after {
+    background: var(--spacecadet);
+    content: "";
+    display: block;
+    padding: 0.85em 0.75em;
+    position: absolute;
+    z-index: -1;
+}
+
+.options button:hover {
+    border: 1px solid var(--silversand);
+    color: var(--silversand);
+    font-weight: bold;
+}
+
+#state, #zip {
+    text-transform: uppercase;
+}
+
+#saveContact {
+    float: right;
+}
+  
+#weather {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 4px var(--ceruleanblue);
+    font-size: 1.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+#weather li {
+    margin: 0 5px;
+    padding: 0 5px;
+}
+
+#weatherWrapper {
+    width: 95%;
+}
+
+/** Footer Style */
+
+footer {
+    background-color: #004ECE;
+    color: white;
+    max-width: 100%;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+/** Finish Footer Style */
+
+/** Header Style */
+
+header {
+    background-color: var(--ceruleanblue);
+    border-bottom: solid 2px black;
+    color: var(--white);
+    justify-content: center;
+    padding: 1.25em .75em;
+}
+
+header img {
+    width: 100px;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    padding: 7px;
+    text-align: center;
+}
+
+.logo-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/** Finish Header Style */
+
+/** Root Style */
+
+:root {
+    --ceruleanblue: #004ECE;
+    --spacecadet: #182D4F;
+    --carolinablue: #0B98E6;
+    --silversand: #C6CBCF;
+   
+    --main: #001219;
+    --accent: #ae2012;
+    --white: white;
+}
+
+/** Finish Root Style */

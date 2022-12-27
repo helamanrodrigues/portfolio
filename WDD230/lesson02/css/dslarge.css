@@ -1,0 +1,16 @@
+@media only screen and (min-width: 60em) {
+    main {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
+        max-width: 960px;
+    }
+  
+    main section:nth-child(3) {
+      grid-column: span 1;
+    }
+  } 
+  

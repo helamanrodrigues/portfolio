@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 8px;
+}
+
+header,
+nav,
+main,
+footer {
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+header,
+footer {
+  background-color: cadetblue;
+  border: 1px solid cadetblue;
+  color: #fff;
+  font-family: 'Antonio', sans-serif;
+  padding: 0.25rem;
+  text-align: center;
+  }
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0.15rem;
+}
+
+header img {
+  width: 200px;
+  height: auto;
+}
+
+ h2 {
+    border-bottom-style: solid;
+    border-color: cadetblue;
+    border-bottom-width: thin;
+    color: rgb(62, 62, 62);
+    font-size: 1rem;
+  }
+
+ul {
+  color: rgb(62, 62, 62);
+}  
+  
+ul a{
+  padding: 0.25em 0.25em;
+  color: rgb(62, 62, 62);
+  line-height: 2em;
+}
+
+ul a:hover{
+  background-color: aliceblue;
+  border-radius: 4.5px;
+  box-shadow: 4.5px 4.5px 4.5px;
+}
+
+footer a {
+  color: white;
+}
+
+.test {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+
+

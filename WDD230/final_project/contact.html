@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chamber of Commerce Website for the Town of São Paulo" />
+  <meta name="author" content="Helaman Rodrigues" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+  <title>Contact Us | Chamber of Commerce, São Paulo</title>
+</head>
+
+<body>
+  <!-- Banner -->
+  <aside id="banner">
+    <!-- banner text here -->
+    <p id="closeBanner">&times;</p>
+  </aside>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="logo" />
+      <div>
+        <h1>São Paulo City</h1>
+        <p>Chamber of Commerce</p>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="menu">
+      <div id="closeBtn">
+        &times;
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sampa.html">São Paulo</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join us</a></li>
+        <li class="active"><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+    <div id="menuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <div id="summary">
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/contact-us.jpg" />
+        <source media="(max-width: 800px)" srcset="images/contact-us.jpg" />
+        <source media="(max-width: 1024px)" srcset="images/contact-us.jpg" />
+        <img src="images/contact-us.jpeg" alt="Contact Us image" />
+      </picture>
+      <h1>Contact us</h1>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.04890389077!2d-46.87550004125811!3d-23.681531439331838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1626561021701!5m2!1sen!2sbr"
+      style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+    <section id="contact">
+      <h2>Please leave us a message.</h2>
+      <div>
+        <form action="thanks.html">
+          <fieldset>
+            <legend>Contact form</legend>
+            <label class="top">
+              Name
+              <input type="text" name="fullname" required />
+            </label>
+            <label class="top">
+              Phone number
+              <input type="tel" name="phone" required />
+            </label>
+            <label class="top">
+              Email
+              <input type="email" name="email" placeholder="username@domain.com" required />
+            </label>
+            <label class="top">
+              Subject
+              <input type="text" name="subject" />
+            </label>
+            <label class="top">
+              Message
+              <textarea name="message"></textarea>
+            </label>
+          </fieldset>
+          <input class="submitBtn" type="submit" value="Send Message" />
+        </form>
+        <div id="contact-info">
+          <h3>Contact Information</h3>
+          <div>
+            <h4>Address</h4>
+            <p>
+              7777777 São Paulo Street <br>
+              Sampa Business <br>
+              São Paulo <br>
+              SP
+            </p>
+            <h4>Phone:</h4>
+            <p>
+              <img src="images/phone-call.svg" alt="phone" /><a href="tel:+11998761234">(11) 99876-1234</a>
+            </p>
+            <h4>Email:</h4>
+            <p>
+              <img src="images/envelope.svg" alt="mail" /><a href="mailto:h_rodrigues@gmail.com">h_rodrigues@gmail.com</a>
+            </p>
+            <ul class="social">
+              <li>
+                <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook" /></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="linkedin" /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com"><img src="images/twitter.svg" alt="twitter" /></a>
+              </li>
+              <li>
+                <a href="https://instagram.com"><img src="images/instagram.svg" alt="instagram" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team">
+      <h2>Board of Directors</h2>
+      <hr>
+      <div>
+        <div>
+          <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Elie Horn">
+          <p>Elie Horn</p>
+          <p>Chairman</p>
+        </div>
+        <div>
+          <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Leo Krakowiak">
+          <p>Leo Krakowiak</p>
+          <p>Vice-Chairman</p>
+        </div>
+        <div>
+          <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="George Zausner">
+          <p>George Zausner</p>
+          <p>Non-Executive Director</p>
+        </div>
+        <div>
+          <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Rafael Novellino">
+          <p>Rafael Novellino</p>
+          <p>Secretary</p>
+        </div>
+        <div>
+          <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Pedro Franco Sales">
+          <p>Pedro Franco Sales</p>
+          <p>Special Advisor</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="top">
+      <div class="about-us">
+        <img src="images/logo.png" alt="logo" />
+        <p>We are proudly accountable to a better way of doing business. We actively pursue the wellbeing of staff,
+          communities and environment and help the businesses we work with do so as well.</p>
+      </div>
+      <div>
+        <a href="//google.com">
+          7777777 São Paulo Street <br> Sampa Business <br> São Paulo <br> SP.
+        </a>
+      </div>
+      <div>
+        <a href="contact.html">Contact Us</a> <br>
+        <a href="tel:+11998761234">(11) 99876-1234</a> <br>
+        <a href="mailto:h_rodrigues@gmail.com">h_rodrigues@gmail.com</a>
+      </div>
+      <div>
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="//facebook.com">FB</a></li>
+          <li><a href="//twitter.com">TW</a></li>
+          <li><a href="//instagram.com">INS</a></li>
+          <li><a href="//linkedin.com">LKD</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2021 Helaman Rodrigues  
+      <p>Weather Data provided by
+        <a href="https://https://openweathermap.org/">OpenWeatherMap.org</a>
+      </p>
+      <p>Last modified <span id="currentDate">202x</span>&nbsp;</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Assignment lesson 09 for Helaman Rodrigues in WDD 230: Web Development at Brigham Young University - Idaho">
+		<meta name="author" content="Helaman Rodrigues">
+
+<!-- This start file was build by Helaman Rodrigues  -->
+		<title>Home Page</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+		<link rel="shortcut icon" href="images/logo.ico">
+		<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+		<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+		<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+		<link href="css/large.css" rel="stylesheet">
+   
+	</head>
+
+	<body>
+		<div class="banner">
+			<h1>Saturday = Preston Pancakes in the Park! 🥞</h1>
+			<h2><em>9:00 a.m.</em> Saturday at the city park pavilion.</h2>
+		</div>
+<!-- HEADER HERE -->
+		<header>
+			<div class="logo-box">
+			<img src="images/logo.webp" alt="Logo of WDC">
+			</div>
+			<div class="headings">
+ 				<h1>Weather Day Center</h1>
+        		<div class="slogan">A change in the weather is sufficient to recreate the world and ourselves.</div>
+			</div>
+    	</header>    
+    
+<!-- NAVIGATION HERE -->
+		<nav>
+			<ul class="navigation">
+				<li><a class="ham" href="#">&#9925; Menu</a></li>
+				<li class="active"><a href="index.html">Home</a></li>
+                <li><a href="home-wireframes.html">Wireframe</a></li>
+				<li><a href="preston.html">Preston</a></li>
+				<li><a href="sodasprings.html">Soda Springs</a></li>
+				<li><a href="fishhaven.html">Fish Haven</a></li>
+				<li><a href="stormcenter.html">Storm Center</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+
+<!-- CONTENT HERE -->
+        <main>
+            <h2>Idaho Town Information</h2>
+            <div id="heroArea">
+                <img src="images/heropichome.jpg" alt="image of weather change in idaho" sizes="100vw"
+                srcset="images/heropichomesm.jpg 400w,
+                        images/heropichomemed.jpg 800w,
+                        images/heropichome.jpg 1280w">
+            </div>
+            <div id="allTownInfo">
+                <article>
+                    <figure class="townInfoImg">
+                        <img src="images/homedatapreston.jpg" alt="park road in preston" loading="lazy">
+                    </figure>
+                    <div class="homeDataPreston"></div>
+                </article>
+                <article>
+                    <figure class="townInfoImg">
+                        <img src="images/homedatasoda.jpg" alt="park road in soda springs" loading="lazy">
+                    </figure>
+                    <div class="homeDataSodaSprings"></div>
+                </article>
+                <article>
+                    <figure class="townInfoImg">
+                        <img src="images/homedatafish.jpg" alt="park road in fish haven" loading="lazy">
+                    </figure>
+                    <div class="homeDataFishhaven"></div>
+                </article>
+            </div>
+            <div id="articleArea">
+                <h3>Article Title</h3>
+                <figure class="articleImg">
+                    <img src="images/articlephotohome.jpg" alt="picture our shy subject of article!" loading="lazy">
+                </figure>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi vitae aliquid sit laborum, a asperiores repellendus sapiente et nulla fuga provident voluptate quis reprehenderit porro cum dolores cupiditate? Velit!</p>
+            </div>
+            
+        </main>
+
+<!-- FOOTER HERE -->   
+        <footer>
+            <div class="allinfo">
+            <div class="contactinfo">
+                <h1>Contact Information</h1>
+                <p>&nbsp;&#128205;&nbsp; São Paulo, Brazil<br>
+                &#9742; (00) 0000-0000<br>
+                &#128231; example@wdc.com</p>
+            </div>
+            <div class="socialmedia">
+                <a href="https://pt-br.facebook.com/helama.rodrigues"><img src="images/facebook-icon.png" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/h_rodrigues97/"><img src="images/instagram-icon.png" alt="Instagram Icon"></a>
+                <a href="https://pinterest.com/"><img src="images/pinterest-icon.png" alt="Pinterest Icon"></a>
+            </div>
+            <div class="map">
+                <img src="images/map.jpg" alt="Map Image">
+            </div>
+            </div>
+            &copy; <span id="currentyear"></span> | Helaman Rodrigues | São Paulo, Brasil |
+            <a href="https://www.byui.edu/online">BYU Online Learning</a>
+            <p>Last Updated: <span id="lastmod"></span></p>
+            <a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/WDD230/">Portal Home Page</a>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ["Antonio:300,400,700", "Roboto:300,400,700"],
+                },
+            });
+        </script>
+        <script src="js/home.js"></script>
+        <script src="js/currentdate.js"></script>   
+        <script src="js/scripts.js"></script>
+        <script src="js/pancakes.js"></script>
+    </body>
+</html>

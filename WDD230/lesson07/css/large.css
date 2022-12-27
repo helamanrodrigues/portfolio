@@ -1,0 +1,67 @@
+@media only screen and (min-width: 60em) {
+
+    /* Footer Section */
+
+    footer {
+        margin: 0 auto;
+        padding: 1.5em;
+    }
+
+    /* Finish Footer */
+
+    /* Header Section */
+    .headings h1 {
+        font-size: 2.5em;
+    }
+
+    header img {
+        width: 65px;
+    }
+
+    /* Finish Header */
+
+    /* Main Section */
+
+    .gallery_list {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery_list figcaption {
+        background-color: rgb(121, 171, 187);
+        display: block;
+        font-size: .9em;
+        margin-top: -.3em;
+        padding: 5%;
+    }
+
+    .gallery_list picture {
+        border: solid black;
+        box-shadow: rgba(0,0,0,.15);
+    }
+
+    
+    main {
+        padding: 1.5em;
+    }
+
+    picture img:hover{
+        box-shadow: 0 0 20px #111;
+    }
+
+    /* Finish Main */
+
+    /* Navigation Section */
+
+    .navigation li {
+        margin: 0 1em;
+    }
+
+    .navigation li a {
+        border: none;
+        padding: .8em 1em;
+    }
+
+    /* Finish Navigation */
+}

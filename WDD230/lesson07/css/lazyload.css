@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+body {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: 'Antonio', sans-serif;
+    background: navy;
+    text-align: center;
+  }
+  
+  [data-src] {
+    min-width: 50px;
+    min-height: 50px;
+  }
+  
+  footer a {
+    color: white;
+  }
+
+    footer a:hover {
+    color: yellow;
+    }
+  
+    footer p {
+     color: white;
+    }
+
+    footer {
+    background-color: rgb(37, 53, 87);
+    border-top: 1px solid black;
+    color: white;
+    font-family: "Antonio", sans-serif;
+    padding: 0.25rem;
+    text-align: center;
+    }
+
+
+  header {
+    color: white;;
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    padding: 5px 0;
+    font-family: 'Antonio', sans-serif;
+  }
+  
+  header img {
+    height: 80px;
+    width: auto;
+    padding-right: 10px;
+  }
+  
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 1px #d6d6d6;
+  }
+
+  img[data-src] {
+    filter: blur(.5em);
+  }
+  
+  img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin-top: 50px;
+  }
+  
+  main {
+    margin: auto;
+    max-width: 400px;
+  }
+  
+  

@@ -1,0 +1,35 @@
+@media only screen and (min-width: 60em) {
+
+    /* Footer Section */
+
+    footer {
+        margin: 0 auto;
+        padding: 1.5em;
+    }
+
+    /* Finish Footer */
+
+    /* Header Section */
+
+    header img {
+        width: 65px;
+    }
+
+    /* Finish Header */
+
+    /* Main Section */
+
+    main {
+        padding: 1.5em;
+    }
+
+    /* Finish Main */
+
+    /* Navigation Section */
+
+    .navigation a {
+        margin: 0 1em;
+    }
+
+    /* Finish Navigation */
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assignment portal for Helaman Rodrigues in WDD 330: Web Development at Brigham Young University - Idaho"
+    />
+    <title>Helaman Rodrigues</title>
+    <link rel ="stylesheet" href="css/indexnormalize.css">
+    <link rel="stylesheet" href="css/indexsmall.css">
+    <link rel="stylesheet" href="css/indexmedium.css">
+    <link rel="shortcut icon" href="images/pexels-jessica-lewis-creative-3361483.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <img src="images/pexels-jessica-lewis-creative-3361483.jpg" alt="Notes Image"/>
+        <h1> Notes From Week 04 </h1>
+    </header>
+    <main class="container">
+       
+        <h2>Notes Part 2</h2>
+        <h3>Getting Started with JSON Web Tokens Complete:</h3>
+        
+       <h4>What is JSON Web Token?</h4>
+       <ul>
+           <li>Is a compact standard that is used to share and transmits information in a safe way.</li>
+           <li> JSON Web Tokens are most use for two things: Authentication (an example could be a log in to an account) and Information exchange (This helps to securely exchange information to one another. Some examples could be banks, schools, government jobs).
+           </li>
+       </ul>
+       
+       <h4>The main three parts of the JWT are:</h4>
+       <p>-Header (Two parts: the type and the hashing algorithm)
+       </p>
+       <p>
+           Example: 
+       {
+       "alg": "HS256",
+       "typ": "JWT"
+       }
+       </p>
+       
+
+       <h4>Payload (There are three types of claims: Reserved, Public and Private)</h4>
+
+       <p>
+           
+       Example:
+       {
+       "sub": "1234567890",
+       "name": "John Doe",
+       "admin": true
+       }
+       </p>
+
+       <h4>Signatures.</h4>
+
+       <h4>How JSON Web Tokens Work?</h4>
+       <p>Note: A good practice is not to store data for a long time in the browser storage because of lack of security.</p>
+       
+       <h4>How JSON Web Tokens Work on my own words:</h4>
+       <p>The browser makes the request, the server sends a Web Token, The Computer Sends a JWT on the authorization header. Finally, the server checks the signatures and sends the information to the client.
+           In my opinion we just have to be careful with specifying the parts of the of the JSON Web Tokens.
+       </p>
+       
+       <h4>Question: How is Cyber security involved on JSON Web Tokens.?</h4>
+
+       <h4>Develop, Debug and Learn Completed</h4>
+       <ul>
+           <li>On the learning phase is important to experiment, even when our work does not look professional it help us to refine our techniques. Practice, Practice and Practice.</li>
+           <li>We should always think on the end users. We should make their life easier, We need to help them to use tools that are going to help them.</li>
+       </ul>  
+
+        <a class="test" href="w04.html">Notes Part 01: Functions</a>
+       
+    </main>
+
+    <footer>
+        &copy; <span id="currentyear"></span> | Helaman Rodrigues | São Paulo, Brasil |
+        <a href="https://helamanrodrigues.github.io/Notes-From-WDD330/readings.html">Portal Home Page</a> |
+        <a href="https://www.byui.edu/online">BYU Online Learning</a>
+        <p>Last Updated: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+  </body>
+</html>

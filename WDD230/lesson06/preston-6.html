@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Assignment lesson 06 for Helaman Rodrigues in WDD 230: Web Development at Brigham Young University - Idaho">
+		<meta name="author" content="Helaman Rodrigues">
+
+<!-- This start file was build by Helaman Rodrigues  -->
+		<title>Preston - WDC</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+		<link rel="shortcut icon" href="images/logo.ico">
+		<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+		<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+		<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+		<link href="css/large.css" rel="stylesheet">
+   
+	</head>
+
+	<body>
+		<div class="banner">
+			<h1>Saturday = Preston Pancakes in the Park! 🥞</h1>
+			<h2><em>9:00 a.m.</em> Saturday at the city park pavilion.</h2>
+		</div>
+<!-- HEADER HERE -->
+		<header>
+			<div class="logo-box">
+			<img src="images/logo.webp" alt="Logo of WDC">
+			</div>
+			<div class="headings">
+ 				<h1>Weather Day Center</h1>
+        		<div class="slogan">A change in the weather is sufficient to recreate the world and ourselves.</div>
+			</div>
+    	</header>    
+    
+<!-- NAVIGATION HERE -->
+		<nav>
+			<ul class="navigation">
+				<li><a class="ham" href="#">&#9925 Menu</a></li>
+				<li><a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/">Home</a></li>
+				<li><a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/lesson09/home-wireframes.html">Wireframe</a></li>
+				<li class="active"><a href="preston-6.html">Preston</a></li>
+				<li><a href="#">Soda Springs</a></li>
+				<li><a href="#">Fish Haven</a></li>
+				<li><a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/lesson08/stormcenter.html">Storm Center</a></li>
+				<li><a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/lesson07/gallery-7.html">Gallery</a></li>
+			</ul>
+		</nav>
+     
+<!-- CONTENT HERE -->
+		<main>
+    		<h1>Preston Idaho</h1>
+			<div class="herodiv">
+				<picture>
+					<source media="(max-width: 360px)" srcset="images/franklinOriginalSmall.jpg">
+					<source media="(max-width: 720px)" srcset="images/franklinOriginalMedium.jpg">
+					<img src="images/franklinOriginalLarge.jpg" alt="beautiful day">
+				</picture>
+				<div class="weatherSummary">
+					<h2>Weather Summary</h2>
+					<hr>
+					<ul>
+						<li>Currently: <span>Sunny</span></li>
+            			<li>High: <span><span class="tempF">76</span>&deg;F</span></li>
+            			<li>Wind Chill: <span id="windchill"></span></li>
+						<li>Humidity: <span>69%</span></li>
+						<li>Wind Speed: <span><span class="windSpeed">5</span> mph</span></li>
+					</ul>
+				</div>
+    		</div>	
+			<div class="forecast">
+				<h2>Five Day Forecast</h2>
+				<div class="weather2">
+				<ul>
+					<li><p>Mon 5/16</p><img src="images/cloud1.png" alt="cloud"><a class="highest">68°</a>/<a class="lowest">39°</a></li>
+					<li><p>Tue 5/17</p><img src="images/cloud2.png" alt="cloud"><a class="highest">70°</a>/<a class="lowest">42°</a></li>
+					<li><p>Wed 5/18</p><img src="images/cloud1.png" alt="cloud"><a class="highest">68°</a>/<a class="lowest">43°</a></li>
+					<li><p>Thu 5/19</p><img src="images/cloud2.png" alt="cloud"><a class="highest">69°</a>/<a class="lowest">39°</a></li>
+					<li><p>Fri 5/20</p><img src="images/cloud1.png" alt="cloud"><a class="highest">70°</a>/<a class="lowest">45°</a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="article">
+				<h3>Article Title</h3>
+				<img src="images/rainbow.jpeg" alt="Rainbow in the beach">
+				<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae mollitia eius quis nam corrupti omnis distinctio nisi ratione, rerum sequi adipisci earum voluptatibus doloribus facere alias nesciunt beatae labore sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, ab consectetur. Sapiente doloribus assumenda autem aliquid, ducimus expedita, sequi dolorum incidunt exercitationem, inventore reprehenderit minus magni quis consequuntur repudiandae. Fugit.
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, vel maxime! Qui sapiente adipisci incidunt ipsa! Voluptatibus, est porro. Nihil aut delectus aperiam suscipit cumque eligendi ea aliquid, reprehenderit corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perspiciatis sequi sit repellat commodi asperiores, dolores omnis maxime itaque illum nemo magni! Quo numquam similique esse saepe consectetur ad aspernatur.
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, vel maxime! Qui sapiente adipisci incidunt ipsa! Voluptatibus, est porro. Nihil aut delectus aperiam suscipit cumque eligendi ea aliquid, reprehenderit corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perspiciatis sequi sit repellat commodi asperiores, dolores omnis maxime itaque illum nemo magni! Quo numquam similique esse saepe consectetur ad aspernatur.</strong></p>
+			</div>
+		</main>
+    
+<!-- FOOTER HERE -->   
+    	<footer>
+			<div class="allinfo">
+			<div class="contactinfo">
+				<h1>Contact Information</h1>
+				<p>&nbsp;&#128205;&nbsp; São Paulo, Brazil<br>
+				&#9742; (00) 0000-0000<br>
+				&#128231; example@wdc.com</p>
+			</div>
+			<div class="socialmedia">
+				<a href="https://pt-br.facebook.com/helama.rodrigues"><img src="images/facebook-icon.png" alt="Facebook Icon"></a>
+				<a href="https://www.instagram.com/h_rodrigues97/"><img src="images/instagram-icon.png" alt="Instagram Icon"></a>
+				<a href="https://pinterest.com/"><img src="images/pinterest-icon.png" alt="Pinterest Icon"></a>
+			</div>
+			<div class="map">
+				<img src="images/map.jpg" alt="Map Image">
+			</div>
+			</div>
+        	&copy; <span id="currentyear"></span> | Helaman Rodrigues | São Paulo, Brasil |
+        	<a href="https://www.byui.edu/online">BYU Online Learning</a>
+        	<p>Last Updated: <span id="lastmod"></span></p>
+        	<a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/WDD230">Portal Home Page</a>
+    	</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					families: ["Antonio:300,400,700", "Roboto:300,400,700"],
+				},
+			});
+		</script>
+		<script src="js/windchill.js"></script>
+		<script src="js/currentdate.js"></script>   
+		<script src="js/scripts.js"></script>
+		<script src="js/pancakes.js"></script>
+	</body>
+</html>

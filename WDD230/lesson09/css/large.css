@@ -1,0 +1,60 @@
+@media only screen and (min-width: 60em) {
+
+    /* Footer Section */
+
+    footer {
+        margin: 0 auto;
+        padding: 1.5em;
+    }
+
+    /* Finish Footer */
+    
+    /* Header Section */
+    .headings h1 {
+        font-size: 2.5em;
+    }
+
+    header img {
+        width: 65px;
+    }
+
+    /* Finish Header */
+
+    /* Main Section */
+
+    #allTownInfo {
+        flex-direction: row;
+    }
+
+    #allTownInfo article {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #allTownInfo article:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    #allTownInfo div {
+        width: 100%;
+    }
+
+    .townInfoImg {
+        width: 100%;
+    }
+    
+    /* Finish Main */
+
+    /* Navigation Section */
+
+    .navigation li {
+        margin: 0 1em;
+    }
+
+    .navigation li a {
+        border: none;
+        padding: .8em 1em;
+    }
+
+    /* Finish Navigation */
+}

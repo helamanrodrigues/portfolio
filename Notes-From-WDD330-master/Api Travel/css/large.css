@@ -1,0 +1,44 @@
+@media only screen and (min-width: 64em) {
+
+    /** Column 1 **/
+  
+    .contacts ul li {
+        font-size: large;
+    }
+
+    .header {
+        font-size: 50px;
+    }
+  
+    /** Column 2 **/
+
+    input {
+        font-size: 25px;
+    }
+  
+    label {
+        font-size: 25px;
+    }
+
+
+    /** Footer Style */
+
+    footer {
+        font-size: 25px;
+    }
+
+    /** Finish Footer Style */
+
+    /** Header Style */
+
+    .headings {
+        font-size: 25px;
+    }
+
+    header img {
+        width: 250px;
+    }
+
+    /** Finish Header Style */
+
+}

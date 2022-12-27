@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Helaman Rodrigues" />
+    <meta name="keywords" content="site plan currency website project design logo audience target" />
+    <meta name="description" content="Site plan for currency website" />
+  
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/medium.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"/>
+    
+    <script src="js/date.js" defer></script>
+    <title>Final Project Proposal</title>
+  </head>
+  <body>
+    <header>
+      <a href="https://helamanrodrigues.github.io/Notes-From-WDD330/readings.html">
+        <img
+          class="logo"
+          src="images/signaturelogo.png"
+          alt="helaman rodrigues hand lettered logo"/>
+      </a>
+      <h1>Final Project Proposal</h1>
+    </header>
+      <nav>
+        <ul class="navigation">
+          <li><a class="ham" href="#">&#9992; Menu</a></li>
+          <li><a href="proposal.html">Purpose</a></li>
+          <li><a href="color.html">Color</a></li>
+          <li><a href="typography.html">Typography</a></li>
+          <li><a href="wireframes.html">Wireframes</a></li>
+          <li><a href="api.html">API</a></li>
+        </ul>
+      </nav>
+      <div class="secondNavBar">
+        <button class="secondNav tablink highlightTab" onclick="openSection(event, 'sectionNameMobile')">Mobile</button>
+        <button class="secondNav tablink" onclick="openSection(event, 'sectionNameDesktop')">Desktop</button>
+      </div>
+    <main class="twogrid">
+
+        <section id="sectionNameMobile" class="sectionName">
+            
+            <img src="images/wireframe_mobile.jpg" alt="wireframes mobile"/>
+            <img src="images/wireframeresults_mobile.jpg" alt="wireframes mobile results"/>
+
+        </section>        
+
+        <section id="sectionNameDesktop" class="sectionName">
+            
+            <img src="images/wireframe_desktop.jpg" alt="wireframes desktop"/>       
+            <img src="images/wireframeresults_desktop.jpg" alt="wireframes desktop results"/>  
+
+        </section>
+
+    </main>
+    <footer>
+      &copy; <span id="currentyear"></span>
+      | Helaman Rodrigues | São Paulo, Brasil |
+    </footer>
+    <script src="js/nav.js"></script> 
+  </body>
+</html>

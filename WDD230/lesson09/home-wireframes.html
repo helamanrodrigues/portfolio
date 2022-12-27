@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an assignment page for the wireframes page of week 9 in WDD 230.">
+    <title>WDD 230 &bull; Week 9 &bull; Wireframes</title>
+<!-- STYLE SHEETS -->
+	<link rel="shortcut icon" href="images/logo.ico">
+	<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+	<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+	<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+	<link href="css/large.css" rel="stylesheet">
+</head>
+
+<!-- HEADER HERE -->
+<header>
+    <div class="logo-box">
+    <img src="images/logo.webp" alt="Logo of WDC">
+    </div>
+    <div class="headings">
+         <h1>Weather Day Center</h1>
+        <div class="slogan">A change in the weather is sufficient to recreate the world and ourselves.</div>
+    </div>
+</header>    
+
+<!-- NAVIGATION HERE -->
+<nav>
+    <ul class="navigation">
+        <li><a class="ham" href="#">&#9925 Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="home-wireframes.html">Wireframe</a></li>
+        <li><a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/lesson06/preston-6.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/lesson07/gallery-7.html">Gallery</a></li>
+    </ul>
+</nav>
+
+<body> 
+    <main>
+        <section id="sectionNameTransition" class="sectionName">
+        <h2>Large View</h2>
+        <img src="images/large.jpg" alt="Large view wireframe" style="border: solid 1px black">
+        <h2>Medium View</h2>
+        <img src="images/medium.jpg" alt="Medium view wireframe" style="border: solid 1px black">
+        <h2>Small View</h2>
+        <img src="images/small.jpg" alt="Small view wireframe" style="border: solid 1px black">
+        </section>
+    </main>
+
+    <footer>
+        &copy; <span id="currentyear"></span> | Helaman Rodrigues | São Paulo, Brasil |
+        <a href="https://www.byui.edu/online">BYU Online Learning</a>
+        <p>Last Updated: <span id="lastmod"></span></p>
+        <a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/WDD230">Portal Home Page</a>
+    </footer>
+    <script src="js/currentdate.js"></script>   
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({
+        google: {
+            families: ["Antonio:300,400,700", "Roboto:300,400,700"],
+        },
+    });</script>
+</body>
+</html>

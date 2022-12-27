@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Assignment Sign Up Presentation for Helaman Rodrigues in WDD 230: Web Development at Brigham Young University - Idaho">
+		<meta name="author" content="Helaman Rodrigues">
+
+<!-- This start file was build by Helaman Rodrigues  -->
+		<title>CSS Transitions</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+		<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+		<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+		<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+		<link href="css/large.css" rel="stylesheet">
+   
+	</head>
+
+	<body>
+<!-- HEADER HERE -->
+		<header>
+			<div class="headings">
+ 				<h1>WDD Week 7 - CSS Transitions</h1>
+        		<div class="slogan">Content about CSS Transitions and his utilities.</div>
+			</div>
+    	</header>    
+    
+<!-- NAVIGATION HERE -->
+		<nav>
+			<ul class="navigation">
+				<li><a class="ham" href="#">&#9925 Menu</a></li>
+				<li><a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/">Home</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="basics.html">Basics</a></li>
+				<li class="active"><a href="properties.html">Properties</a></li>
+				<li><a href="example.html">Example</a></li>
+			</ul>
+		</nav>
+     
+<!-- CONTENT HERE -->
+		<main>
+    		<h1>CSS Transitions</h1>
+			<hr>
+			<h2>One More Transition Example</h2>	
+			<p>The CSS transition properties can be specified one by one, like this:</p>
+			<div class="example">
+				<h3>Example</h3>
+				<div class="codingText">
+				div
+				{<br>&nbsp; transition-property: width;<br>
+				  &nbsp;
+				transition-duration: 2s;<br>
+				  &nbsp;
+				transition-timing-function: linear;<br>
+				&nbsp;&nbsp;transition-delay: 1s;<br>
+				}
+				</div>
+				<br>
+				</div>
+				<h4>The transition Properties Specified One by One</h4>
+				<p>Hover over the div element below, to see the transition effect:</p>
+				<div class="properties"></div>
+				<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+				<p>Or by using the shorthand property <b>transition</b>:</p>
+				<div class="example">
+					<h3>Example</h3>
+					<div class="codingText">
+					div
+					{<br>
+					  &nbsp;
+					transition: width 2s linear 1s;<br>
+					}
+					</div>
+					<br>
+					</div>
+					<h4>Using the transition shorthand property</h4>
+					<p>Hover over the div element below, to see the transition effect:</p>
+					<div class="properties2"></div>
+					<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+			<h2>CSS Transition Properties</h2>
+			<p>The following table lists all the CSS transition properties:</p>
+			<table class="properties3">
+			<tr>
+				<th>Property</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td class="table">transition</td>
+				<td class="table">A shorthand property for setting the four transition properties into a single property</td>
+			</tr>
+			<tr>
+				<td>transition-delay</td>
+				<td>Specifies a delay (in seconds) for the transition effect</td>
+				</tr>
+			<tr>
+				<td class="table">transition-duration</td>
+				<td class="table">Specifies how many seconds or milliseconds a transition effect takes to complete</td>
+			</tr>
+			<tr>
+				<td>transition-property</td>
+				<td>Specifies the name of the CSS property the transition effect is for</td>
+			</tr>
+			<tr>
+				<td class="table">transition-timing-function</td>
+				<td class="table">Specifies the speed curve of the transition effect</td>
+			</tr>
+			</table>
+		</main>
+    
+<!-- FOOTER HERE -->   
+    	<footer>
+        	&copy; <span id="currentyear"></span> | Helaman Rodrigues | São Paulo, Brasil |
+        	<a href="https://www.byui.edu/online">BYU Online Learning</a>
+        	<p>Last Updated: <span id="lastmod"></span></p>
+        	<a href="https://helamanrodrigues.github.io/helamanrodrigues.git.io/">Portal Home Page</a>
+    	</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					families: ["Antonio:300,400,700", "Roboto:300,400,700"],
+				},
+			});
+		</script>
+		<script src="js/currentdate.js"></script>   
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
