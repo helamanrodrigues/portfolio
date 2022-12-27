@@ -1,0 +1,198 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@media screen and (max-width: 550px) {
+  .home-grid, nav ul {
+    display: block;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  background-color: #FF2400;
+  }
+
+body {
+  background-color: #8FC0A9;
+  font-family: 'Rock Salt', 'cursive', 'sans-serif';
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0 auto;
+  color: #444;
+}
+
+h1 {
+  font-family: 'Rock Salt', 'cursive', 'sans-serif';
+  font-size: 32px;
+}
+
+h2 {
+  font-family: 'Rock Salt', 'cursive', 'sans-serif';
+  border: 5px dashed;
+  padding: 0.5em;
+  color: #FFBD19;
+}
+
+p {
+  font-family: 'Architects Daughter', 'cursive', 'sans-serif';
+}
+
+header {
+  font-size: 1.1em;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 150px auto;
+  background-color: #FFBD19;
+  border: 1px solid #FF2400;
+}
+
+.logo-box {
+  background: #FFBD19;
+  padding: 0.1em;
+}
+
+.logo-box img{
+  width: 140px;
+  margin-top: 4px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  list-style: none;
+  margin: 0;
+  
+}
+
+nav a {
+  color: #FF2400; 
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+nav a:hover {
+  color: #FFBD19;
+  background-color: #FF2400;
+}
+
+ .banner-box img {
+         width: 100%;
+         margin-top: 4px;
+         }
+
+.home-grid {
+         display: grid;
+         grid-template-columns: repeat(5, 1fr);
+         grid-gap: 1em;    
+         background-color: white;
+         }      
+
+ .home-headline-1 {
+              padding: 1em;
+              text-align: center;
+              line-height: 100%;
+              margin-bottom: -25px;
+              grid-column: 1/4;
+              grid-row: 1/2;
+              margin-left: 20px;
+            }
+          
+      .home-paragraph-1 {
+              padding: 1em;
+              text-align: center;
+              background-color: white;
+              grid-column: 1/4;
+              grid-row: 2/4;
+            }
+
+      .home-right-img {
+             grid-column: 4/5;
+             grid-row: 1/3;
+             max-width: 190%;
+             border: 1px solid #ccc;
+             padding: 10px;
+             box-shadow: 10px 10px 10px #999;
+             margin-top: 4px;
+            }
+         
+      .home-headline-2 {
+              padding: 1em;
+              text-align: center;
+              line-height: 100%;
+              margin-bottom: -25px;
+              margin-right: 20px;
+              grid-column: 3/6;
+              grid-row: 4/5;
+            }
+        
+      .home-paragraph-2 {
+              padding: 1em;
+              text-align: center;
+              background-color: white;
+              grid-column: 3/6;
+              grid-row: 5/7;
+            }
+
+      .home-left-img {
+             grid-column: 1/3;
+             grid-row: 4/6;
+             max-width: 95%;
+             border: 1px solid #ccc;
+             padding: 10px;
+             box-shadow: 10px 10px 10px #999;
+             margin-left: 4px;
+            }
+  
+      .home-headline-3 {
+              padding: 1em;
+              text-align: center;
+              line-height: 100%;
+              border-bottom: 5px dashed;
+              margin-bottom: 0px;
+              margin-left: 20px;
+              margin-right: 20px;
+            }
+
+      .home-paragraph-3 {
+              text-align: center;
+              grid-column: 1/6;
+              grid-row: 7/8;
+            }
+    
+     .home-paragraph-4 {
+                padding: 1em;
+                text-align: center;
+                background-color: white;  
+            }              
+
+footer {
+  height: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  align-items: center;
+}
+
+.social-2 { 
+  font-family: fantasy;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  padding: 1em;
+  margin: 0;
+  text-align: left;
+}
+
+.social {
+  grid-column: 4/6;
+  grid-row: 1/2;
+  margin: 0;
+  padding: 1em;
+}
+
+.social img{
+   width: 55px;
+}
+
+
+
