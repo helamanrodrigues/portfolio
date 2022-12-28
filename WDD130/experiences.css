@@ -10,7 +10,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   background-color: #FF2400;
-  }
+}
 
 body {
   background-color: #8FC0A9;
@@ -64,220 +64,275 @@ header {
   border-radius: 50px 50px 50px 50px;
 }
 
-nav ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-  list-style: none;
-  margin: 0;
-  
+nav {
+	margin: 0 auto;
+  padding: 1em;
 }
 
-nav a {
-  color: #FF2400; 
-  border-radius: 6px;
-  padding: 4px 8px 4px 8px;
-}
-
-nav a:hover {
-  color: #FFBD19;
+.navigation a:hover {
   background-color: #FF2400;
+  color: #FFBD19;
 }
 
- .banner-box img {
-         width: 100%;
-         margin-top: 4px;
-         }
+.navigation {
+	list-style: none;
+  margin: 0 auto;
+	padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.navigation li a {
+  color: #FF2400;
+}
+
+
+@media only screen and (min-width: 31.5em) {
+  nav li {
+    color: #FFBD19;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation a:hover {
+    background-color: #FF2400;
+    color: #FFBD19;
+    font-weight: bold;
+  }
+  
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+  
+  .navigation li a {
+    border: none;
+    color: #FF2400;
+    font-size: 1em;
+    padding: 1.2em 1em;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  nav {
+    color:#FF2400;
+  }
+
+  nav a:hover {
+    color: #FFBD19;
+    background-color: #FF2400;
+  }
+
+  .navigation li {
+    margin: 0;
+  }
+
+  .navigation li a {
+    border: none;
+    color: #FF2400;
+    padding: .8em 1em;
+  }
+}
+
+.banner-box img {
+  width: 100%;
+  margin-top: 4px;
+}
 
 .experiences-grid {
-         display: grid;
-         grid-template-columns: repeat(8, 1fr);
-         grid-gap: 1em;    
-         background-color: white;
-         }     
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1em;    
+  background-color: white;
+}     
 
 .experiences-title-1 {
-              padding: 1em;
-              text-align: center;
-              line-height: 70%;
-              margin-bottom: -25px;
-              grid-column: 1/9;
-              grid-row: 1;
-            }
+  padding: 1em;
+  text-align: center;
+  line-height: 70%;
+  margin-bottom: -25px;
+  grid-column: 1/9;
+  grid-row: 1;
+}
 
 .experiences-title-2 {
-              padding: 1em;
-              text-align: center;
-              line-height: 70%;
-              margin-bottom: -25px;
-              grid-column: 1/9;
-              grid-row: 2/3;
-              margin-left: 150px;
-              margin-right: 150px;
-            }
+  padding: 1em;
+  text-align: center;
+  line-height: 70%;
+  margin-bottom: -25px;
+  grid-column: 1/9;
+  grid-row: 2/3;
+  margin-left: 150px;
+  margin-right: 150px;
+}
 
 .experiences-left-img {
-             grid-column: 1/3;
-             grid-row: 4;
-             max-width: 100%;
-             border: 1px solid #ccc;
-             padding: 10px;
-             box-shadow: 10px 10px 10px #999;
-             margin-left: 4px;
-            }
+  grid-column: 1/3;
+  grid-row: 4;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 10px 10px 10px #999;
+  margin-left: 4px;
+}
 
 .experiences-headline-1 {
-              padding: 1em;
-              text-align: left;
-              line-height: 150%;
-              margin-bottom: -25px;
-              grid-column: 1/3;
-              grid-row: 5;
-              margin-left: 10px;
-            }
+  padding: 1em;
+  text-align: left;
+  line-height: 150%;
+  margin-bottom: -25px;
+  grid-column: 1/3;
+  grid-row: 5;
+  margin-left: 10px;
+}
 
 .experiences-paragraph-1 {
-              padding: 1em;
-              text-align: left;
-              background-color: white;
-              grid-column: 1/3;
-              grid-row: 6;
-            }
+  padding: 1em;
+  text-align: left;
+  background-color: white;
+  grid-column: 1/3;
+  grid-row: 6;
+}
 
 .experiences-center-img {
-             grid-column: 4/6;
-             grid-row: 4;
-             max-width: 100%;
-             border: 1px solid #ccc;
-             padding: 10px;
-             box-shadow: 10px 10px 10px #999;
-            }
+  grid-column: 4/6;
+  grid-row: 4;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 10px 10px 10px #999;
+}
 
 .experiences-headline-2 {
-              padding: 1em;
-              text-align: center;
-              line-height: 150%;
-              margin-bottom: -25px;
-              grid-column: 4/6;
-              grid-row: 5;
-              margin-left: 10px;
-            }
+  padding: 1em;
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: -25px;
+  grid-column: 4/6;
+  grid-row: 5;
+  margin-left: 10px;
+}
 
 .experiences-paragraph-2 {
-              padding: 1em;
-              text-align: center;
-              background-color: white;
-              grid-column: 4/6;
-              grid-row: 6;
-              margin-left: 10px;
-            }
+  padding: 1em;
+  text-align: center;
+  background-color: white;
+  grid-column: 4/6;
+  grid-row: 6;
+  margin-left: 10px;
+}
 
 .experiences-right-img {
-             grid-column: 7/9;
-             grid-row: 4;
-             max-width: 100%;
-             border: 1px solid #ccc;
-             padding: 10px;
-             box-shadow: 10px 10px 10px #999;
-             margin-left: -30px;
-            }
+  grid-column: 7/9;
+  grid-row: 4;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 10px 10px 10px #999;
+  margin-left: -30px;
+}
 
 .experiences-headline-3 {
-              padding: 1em;
-              text-align: right;
-              line-height: 150%;
-              margin-bottom: -25px;
-              grid-column: 7/9;
-              grid-row: 5;
-              margin-right: 10px;
-            }
+  padding: 1em;
+  text-align: right;
+  line-height: 150%;
+  margin-bottom: -25px;
+  grid-column: 7/9;
+  grid-row: 5;
+  margin-right: 10px;
+}
 
 .experiences-paragraph-3 {
-              padding: 1em;
-              text-align: right;
-              background-color: white;
-              grid-column: 7/9;
-              grid-row: 6;
-              margin-right: 10px;
-            }
+  padding: 1em;
+  text-align: right;
+  background-color: white;
+  grid-column: 7/9;
+  grid-row: 6;
+  margin-right: 10px;
+}
 
 .experiences-title-3 {
-             padding: 1em;
-             text-align: center;
-             line-height: 70%;
-             margin-bottom: -25px;
-             grid-column: 1/9;
-             grid-row: 7/8;
-             margin-left: 150px;
-             margin-right: 150px;
+  padding: 1em;
+  text-align: center;
+  line-height: 70%;
+  margin-bottom: -25px;
+  grid-column: 1/9;
+  grid-row: 7/8;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .experiences-headline-4 {
-            padding: 1em;
-            text-align: left;
-            line-height: 150%;
-            margin-bottom: -25px;
-            grid-column: 1/3;
-            grid-row: 10;
-            margin-left: 10px;
+  padding: 1em;
+  text-align: left;
+  line-height: 150%;
+  margin-bottom: -25px;
+  grid-column: 1/3;
+  grid-row: 10;
+  margin-left: 10px;
 }
 
 .experiences-left-img-2 {
-             grid-column: 7/9;
-             grid-row: 9;
-             max-width: 70%;
-             border: 1px solid #ccc;
-             padding: 10px;
-             box-shadow: 10px 10px 10px #999;
-             margin-left: -30px;
-            }
+  grid-column: 7/9;
+  grid-row: 9;
+  max-width: 70%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 10px 10px 10px #999;
+  margin-left: -30px;
+}
 
 .experiences-headline-5 {
-            padding: 1em;
-            text-align: center;
-            line-height: 150%;
-            margin-bottom: -25px;
-            grid-column: 4/6;
-            grid-row: 10;
-            margin-left: 10px;
+  padding: 1em;
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: -25px;
+  grid-column: 4/6;
+  grid-row: 10;
+  margin-left: 10px;
 }
 
 .experiences-center-img-2 {
-            grid-column: 4/6;
-            grid-row: 9;
-            max-width: 100%;
-            margin-top: 50px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            box-shadow: 10px 10px 10px #999;
+  grid-column: 4/6;
+  grid-row: 9;
+  max-width: 100%;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 10px 10px 10px #999;
 }
+
 .experiences-headline-6 {
-            padding: 1em;
-            text-align: right;
-            line-height: 150%;
-            margin-bottom: -25px;
-            grid-column: 7/9;
-            grid-row: 10;
-            margin-right: 10px;
-  
+  padding: 1em;
+  text-align: right;
+  line-height: 150%;
+  margin-bottom: -25px;
+  grid-column: 7/9;
+  grid-row: 10;
+  margin-right: 10px; 
 }
 
 .experiences-right-img-2 {
-            grid-column: 1/3;
-            grid-row: 9;
-            max-width: 70%;
-            border: 1px solid #ccc;
-            padding: 10px;
-            box-shadow: 10px 10px 10px #999;
-            margin-left: 4px;
+  grid-column: 1/3;
+  grid-row: 9;
+  max-width: 70%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 10px 10px 10px #999;
+  margin-left: 4px;
 }
 
 .experiences-paragraph-4 {
-            padding: 1em;
-            text-align: center;
-            background-color: white;
-            grid-column: 2/8;
-            grid-row: 11/12;
-            margin-right: 10px;
+  padding: 1em;
+  text-align: center;
+  background-color: white;
+  grid-column: 2/8;
+  grid-row: 11/12;
+  margin-right: 10px;
 }
 
 footer {

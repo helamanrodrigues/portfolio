@@ -68,23 +68,78 @@ header {
   border-radius: 50px 50px 50px 50px;
 }
 
-nav ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-  list-style: none;
-  margin: 0;
-  
+nav {
+	margin: 0 auto;
+  padding: 1em;
 }
 
-nav a {
-  color: #FF2400; 
-  border-radius: 6px;
-  padding: 4px 8px 4px 8px;
-}
-
-nav a:hover {
-  color: #FFBD19;
+.navigation a:hover {
   background-color: #FF2400;
+  color: #FFBD19;
+}
+
+.navigation {
+	list-style: none;
+  margin: 0 auto;
+	padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.navigation li a {
+  color: #FF2400;
+}
+
+
+@media only screen and (min-width: 31.5em) {
+  nav li {
+    color: #FFBD19;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation a:hover {
+    background-color: #FF2400;
+    color: #FFBD19;
+    font-weight: bold;
+  }
+  
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+  
+  .navigation li a {
+    border: none;
+    color: #FF2400;
+    font-size: 1em;
+    padding: 1.2em 1em;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  nav {
+    color:#FF2400;
+  }
+
+  nav a:hover {
+    color: #FFBD19;
+    background-color: #FF2400;
+  }
+
+  .navigation li {
+    margin: 0;
+  }
+
+  .navigation li a {
+    border: none;
+    color: #FF2400;
+    padding: .8em 1em;
+  }
 }
 
  .banner-box img {
