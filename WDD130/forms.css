@@ -229,11 +229,13 @@ nav {
 
 .color {
   background-color: white;
+  margin-top: -25px;
 }
 
 #feedback {
   background-color: antiquewhite;
   display: none;
+  margin-top: 15px;
 }
 
 input, textarea {
