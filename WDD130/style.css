@@ -333,3 +333,7 @@ nav {
   padding: 1em;
   align-items: center;
 }
+
+.social img{
+  width: 50px;
+}
