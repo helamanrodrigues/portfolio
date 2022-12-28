@@ -21,20 +21,12 @@ body {
   color: #444;
 }
 
-h1 {
+h2 {
   font-family: 'Rock Salt', 'cursive', 'sans-serif';
   font-size: 32px;
   border: 5px dashed;
   color: #FFBD19;
   text-align: center;
-  
-}
-
-h2 {
-  font-family: 'Rock Salt', 'cursive', 'sans-serif';
-  border: 5px solid;
-  padding: 0.5em;
-  color: #FFBD19;
 }
 
 h3 {
@@ -142,23 +134,16 @@ nav {
   }
 }
 
- .banner-box img {
-         width: 100%;
-         margin-top: 4px;
-         }
+.banner-box img {
+  width: 100%;
+  margin-top: 4px;
+}
 
 .aboutme-style-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 1em;    
   background-color: white;
-}
-
-.image-me {
-  grid-column: 4;
-  grid-row: 3;
-  margin-left: 100px;
-  margin-bottom: -50px;
 }
 
 .aboutme-title-1 {
@@ -176,16 +161,9 @@ nav {
   line-height: 100%;
   margin-bottom: -25px;
   grid-column: 1/9;
-  grid-row: 5;
-}
-
-.aboutme-headline-2 {
-  padding: 1em;
-  text-align: center;
-  line-height: 100%;
-  margin-bottom: -25px;
-  grid-column: 1/9;
-  grid-row: 6;
+  grid-row: 3;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .aboutme-paragraph-1 {
@@ -193,7 +171,7 @@ nav {
   text-align: center;
   background-color: white;
   grid-column: 1/9;
-  grid-row: 7;
+  grid-row: 4;
 }
 
 .aboutme-paragraph-2 {
@@ -201,7 +179,7 @@ nav {
   text-align: center;
   background-color: white;
   grid-column: 1/9;
-  grid-row: 8;
+  grid-row: 5;
 }
 
 .aboutme-paragraph-3 {
@@ -209,7 +187,7 @@ nav {
   text-align: center;
   background-color: white;
   grid-column: 1/9;
-  grid-row: 9;
+  grid-row: 6;
 }
 
 .aboutme-paragraph-4 {
@@ -217,7 +195,7 @@ nav {
   text-align: center;
   background-color: white;
   grid-column: 1/9;
-  grid-row: 10;
+  grid-row: 7;
 }
 
 .aboutme-paragraph-5 {
@@ -225,7 +203,7 @@ nav {
   text-align: center;
   background-color: white;
   grid-column: 1/9;
-  grid-row: 11;
+  grid-row: 8;
 }
 
 .aboutme-paragraph-6 {
@@ -233,9 +211,23 @@ nav {
   text-align: center;
   background-color: white;
   grid-column: 1/9;
-  grid-row: 12;
+  grid-row: 9;
 }
 
+.image-me {
+  grid-column: 1/9;
+  grid-row: 10;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 60em) {
+  .image-me {
+    grid-column: 1/9;
+    grid-row: 10;
+    margin-left: 500px;
+  }
+}
 
 footer {
   height: 55px;

@@ -10,7 +10,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   background-color: #FF2400;
-  }
+}
 
 body {
   background-color: #8FC0A9;
@@ -137,83 +137,84 @@ nav {
     padding: .8em 1em;
   }
 }
- .banner-box img {
-         width: 100%;
-         margin-top: 4px;
-         }
+
+.banner-box img {
+  width: 100%;
+  margin-top: 4px;
+}
 
 .about-us-grid {
-         display: grid;
-         grid-template-columns: repeat(8, 1fr);
-         grid-gap: 1em;    
-         background-color: white;
-         }      
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1em;    
+  background-color: white;
+}      
 
 .about-us-title-1 {
-              padding: 1em;
-              text-align: center;
-              line-height: 70%;
-              margin-bottom: -25px;
-              grid-column: 1/9;
-              grid-row: 1/2;
-            }
+  padding: 1em;
+  text-align: center;
+  line-height: 70%;
+  margin-bottom: -25px;
+  grid-column: 1/9;
+  grid-row: 1/2;
+}
 
 .about-us-headline-2 {
-              padding: 1em;
-              text-align: center;
-              line-height: 100%;
-              margin-bottom: -25px;
-              grid-column: 1/9;
-              grid-row: 4;
-              margin-left: 50px;
-              margin-right: 50px;
-            }
+  padding: 1em;
+  text-align: center;
+  line-height: 100%;
+  margin-bottom: -25px;
+  grid-column: 1/9;
+  grid-row: 4;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 .about-us-paragraph-2 {
-              padding: 1em;
-              text-align: center;
-              background-color: white;
-              grid-column: 1/9;
-              grid-row: 5;
-            }
+  padding: 1em;
+  text-align: center;
+  background-color: white;
+  grid-column: 1/9;
+  grid-row: 5;
+}
 
 .about-us-headline-3 {
-              padding: 1em;
-              text-align: center;
-              line-height: 100%;
-              margin-bottom: -25px;
-              grid-column: 1/9;
-              grid-row: 6;
-              margin-left: 50px;
-              margin-right: 50px;
-            }
+  padding: 1em;
+  text-align: center;
+  line-height: 100%;
+  margin-bottom: -25px;
+  grid-column: 1/9;
+  grid-row: 6;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 .about-us-paragraph-3 {
-              padding: 1em;
-              text-align: center;
-              background-color: white;
-              grid-column: 1/9;
-              grid-row: 7;
-            }
+  padding: 1em;
+  text-align: center;
+  background-color: white;
+  grid-column: 1/9;
+  grid-row: 7;
+}
 
 .about-us-headline-4 {
-              padding: 1em;
-              text-align: center;
-              line-height: 100%;
-              margin-bottom: -25px;
-              grid-column: 1/9;
-              grid-row: 8;
-              margin-left: 50px;
-              margin-right: 50px;
-            }
+  padding: 1em;
+  text-align: center;
+  line-height: 100%;
+  margin-bottom: -25px;
+  grid-column: 1/9;
+  grid-row: 8;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 .about-us-paragraph-4 {
-              padding: 1em;
-              text-align: center;
-              background-color: white;
-              grid-column: 1/9;
-              grid-row: 9;
-            }
+  padding: 1em;
+  text-align: center;
+  background-color: white;
+  grid-column: 1/9;
+  grid-row: 9;
+}
 
 footer {
   height: 55px;
