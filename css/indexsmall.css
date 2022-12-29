@@ -51,8 +51,8 @@ ul a{
 }
 
 ul a:hover{
-  background-color:rgba(241, 238, 23, 0.959);
-  color: black;
+  background-color: navy;
+  color: rgba(241, 238, 23, 0.959);
   border-radius: 4.5px;
   box-shadow: 4.5px 4.5px 4.5px;
 }

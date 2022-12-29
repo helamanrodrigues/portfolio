@@ -18,13 +18,13 @@ footer {
 
 header,
 footer {
-  background-color: cadetblue;
-  border: 1px solid cadetblue;
+  background-color: navy;
+  border: 1px solid navy;
   color: #fff;
   font-family: 'Antonio', sans-serif;
   padding: 0.25rem;
   text-align: center;
-  }
+}
 
 h1 {
   font-size: 1.5rem;
@@ -36,13 +36,13 @@ header img {
   height: auto;
 }
 
- h2 {
-    border-bottom-style: solid;
-    border-color: cadetblue;
-    border-bottom-width: thin;
-    color: rgb(62, 62, 62);
-    font-size: 1rem;
-  }
+h2 {
+  border-bottom-style: solid;
+  border-color: rgba(241, 238, 23, 0.959);
+  border-bottom-width: thin;
+  color: rgb(62, 62, 62);
+  font-size: 1rem;
+}
 
 ul {
   color: rgb(62, 62, 62);
