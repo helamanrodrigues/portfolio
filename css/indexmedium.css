@@ -12,8 +12,44 @@
     }
 
     header img {
+        display: none;
+    }
+
+    .article {
+        background-color: rgba(0,0,0,.1);
+        padding: .1em 1em;
+    }
+
+    #allProjectInfo article {
+        flex-direction: row;
+    }
+
+    #allProjectInfo article:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    #allProjectInfo div {
+        width: 50%;
+    }
+
+    .projectInfoImg {
+        width: 50%;
+    }
+
+    .articleImg {
+        margin: 0 0 15px 15px;
+        width: 50%;
         float: right;
-        border-radius: 15px;
-        box-shadow: 0 0 30px #444;
+    }   
+
+    .article img {
+        float: right;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        width: 250px;
+    }
+
+    .p01, .p02, .p03, .p04 {
+        margin: auto;
     }
 }
