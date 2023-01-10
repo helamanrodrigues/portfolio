@@ -19,4 +19,41 @@
         width: 275px;
         height: auto;
     }
+
+    /* Main Section */
+
+    .article {
+        margin: 0 2em;
+    }
+
+    #allTownInfo {
+        flex-direction: row;
+    }
+
+    #allTownInfo article {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #allTownInfo article:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    #allTownInfo div {
+        width: 10%;
+    }
+
+    .townInfoImg {
+        width: 10%;
+    }
+
+    main {
+        padding: 1.5em;
+    }
+
+    picture img:hover{
+        box-shadow: 0 0 20px #111;
+    }
+    
+
 }
