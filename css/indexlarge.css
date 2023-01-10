@@ -16,44 +16,38 @@
         float: right;
         border-radius: 15px;
         box-shadow: 0 0 30px #444;
-        width: 275px;
+        width: 150px;
         height: auto;
     }
-
-    /* Main Section */
 
     .article {
         margin: 0 2em;
     }
 
-    #allTownInfo {
+    #allProjectInfo {
         flex-direction: row;
     }
 
-    #allTownInfo article {
+    #allProjectInfo article {
         align-items: center;
         flex-direction: column;
     }
 
-    #allTownInfo article:nth-child(odd) {
+    #allProjectInfo article:nth-child(odd) {
         flex-direction: column;
     }
 
-    #allTownInfo div {
-        width: 10%;
+    #allProjectInfo div {
+        width: 100%;
     }
 
-    .townInfoImg {
-        width: 10%;
-    }
-
-    main {
-        padding: 1.5em;
-    }
-
-    picture img:hover{
-        box-shadow: 0 0 20px #111;
+    .projectInfoImg {
+        width: 100%;
     }
     
-
+    #articleArea img {
+        margin: auto;
+        width: 70%;
+    }	
+    
 }

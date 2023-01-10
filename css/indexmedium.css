@@ -11,13 +11,17 @@
         border-radius: 15px;
     }
 
-    header img {
-        display: none;
-    }
-
     .article {
         background-color: rgba(0,0,0,.1);
         padding: .1em 1em;
+    }
+
+    header img {
+        float: right;
+        border-radius: 15px;
+        box-shadow: 0 0 30px #444;
+        width: 120px;
+        height: auto;
     }
 
     #allProjectInfo article {
