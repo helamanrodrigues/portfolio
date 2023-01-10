@@ -50,24 +50,9 @@ h2 {
     font-size: 1rem;
 }
 
-  
-ul a{
-  padding: 0.25em 0.25em;
-  color: navy;
-  line-height: 2em;
-}
-
-ul a:hover{
-  background-color: whitesmoke;
-  color: navy;
-  border-radius: 4.5px;
-  box-shadow: 4.5px 4.5px 4.5px;
-}
-
 footer a {
   color: white;
 }
-
 
 #allProjectInfo {
   background: whitesmoke;
@@ -79,7 +64,6 @@ footer a {
   overflow: auto;
 	padding: 15px;
 }
-
 
 #allProjectInfo article {
   background: whitesmoke;
@@ -95,8 +79,6 @@ footer a {
   height: auto;
 	width: 100%; 
 }
-
-
 
 #allProjectInfo div {
   align-items: center;
