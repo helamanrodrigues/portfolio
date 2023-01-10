@@ -140,3 +140,5 @@ function lockFields() {
 
 displayContacts(getLocalContacts());
 userCoords();
+
+document.querySelector('#currentyear').textContent = new Date().getFullYear();
